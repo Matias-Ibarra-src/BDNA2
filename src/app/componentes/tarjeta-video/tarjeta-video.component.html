@@ -1,0 +1,9 @@
+<div class="container" *ngIf="tarjetaVideo">
+    <div class="card" style="width: 28rem;">
+        <iframe width="447" height="240" [src]="tarjetaVideo.videoUrl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <div class="card-body">
+            <p class="card-text">{{tarjetaVideo.titulo}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+div ul {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+
+div form button {
+    color: white;
+    font-family: sans-serif;
+}
+
+div form input {
+    font-family: serif;
+}

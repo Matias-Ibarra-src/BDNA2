@@ -1,0 +1,12 @@
+<div id=semana class="container">
+
+    <div class="row mt-5">
+        <div class="col-10 offset-1" *ngFor="let noticia of noticias">
+            <app-tarjeta-semanal [semanaTarjeta]="noticia"></app-tarjeta-semanal>
+        </div>
+        <!--col-->
+
+    </div>
+    <!--row-->
+</div>
+<!--container-->

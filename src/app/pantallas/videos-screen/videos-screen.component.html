@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-6" *ngFor="let Video of videos">
+            <div class="card" style="width: 28rem;">
+                <p>{{Video.videoUrl}} {{Video.titulo}}</p>
+                <div class="embed-responsive embed-responsive-16by9" *ngIf="Video">
+                    <p>{{Video.titulo}}</p>
+                    <iframe class="embed-responsive-item" src="{{Video.videoUrl}}" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!--col-->
+    </div>
+    <!--row-->
+</div>
+<!--container-->
