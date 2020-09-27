@@ -1,24 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Buenos Dias Norte America</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div id="nav1" class="row-md-4">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00ffaaca;">
+        <a class="navbar-brand" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" href="#">
+            <h4 class="h"><img class="imagen" width="30" heigth="30" src="https://yt3.ggpht.com/a/AATXAJxLlg0gJLzBLLb6l9f-c_yKAiKz3oh62awc6k-M=s100-c-k-c0xffffffff-no-rj-mo"></h4>
+        </a>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active" [routerLink]="['inicio']" routerLinkActive="active">
-                <a class="nav-link">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item" [routerLink]="['noticias-semana']" routerLinkActive="active">
-                <a class="nav-link">Noticias De La Semana</a>
-            </li>
-            <li class="nav-item" [routerLink]="['videos']" routerLinkActive="active">
-                <a class="nav-link">videos</a>
-            </li>
-        </ul>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" [routerLink]="['inicio']" routerLinkActive="active">
+                    <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" [routerLink]="['noticias-semana']" routerLinkActive="active">
+                    <a class="nav-link">Noticias De La Semana</a>
+                </li>
+                <li class="nav-item" [routerLink]="['videos']" routerLinkActive="active">
+                    <a class="nav-link">videos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

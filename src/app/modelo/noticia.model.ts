@@ -3,5 +3,6 @@ export interface Noticia{
   titulo: string;
   imgUrl: string;
   resumen: string;
-  cuerpo: string;
-};
+  cuerpo?: string;
+  fecha: string;
+}

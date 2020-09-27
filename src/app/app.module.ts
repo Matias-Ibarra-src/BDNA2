@@ -12,6 +12,7 @@ import { TarjetaSemanalComponent } from './componentes/tarjeta-semanal/tarjeta-s
 import { NoticiasSemanaScrennComponent } from './pantallas/noticias-semana-screnn/noticias-semana-screnn.component';
 import { VideosScreenComponent } from './pantallas/videos-screen/videos-screen.component';
 import { TarjetaVideoComponent } from './componentes/tarjeta-video/tarjeta-video.component';
+import { TarjetaPequeComponent } from './componentes/tarjeta-peque/tarjeta-peque.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { TarjetaVideoComponent } from './componentes/tarjeta-video/tarjeta-video
     NoticiasSemanaScrennComponent,
     VideosScreenComponent,
     TarjetaVideoComponent,
+    TarjetaPequeComponent,
   ],
   imports: [
     BrowserModule,

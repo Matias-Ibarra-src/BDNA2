@@ -13,7 +13,7 @@ export class NoticiasSemanaScrennComponent implements OnInit {
   constructor(private noticiasService: NoticiaService) { }
 
   ngOnInit(): void {
-    this.noticias = this.noticiasService.getNoticias();
+    this.noticias = this.noticiasService.getNoticiasSemana();
   }
 
 }
