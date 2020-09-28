@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,15 @@ import { NoticiasSemanaScrennComponent } from './pantallas/noticias-semana-scren
 import { VideosScreenComponent } from './pantallas/videos-screen/videos-screen.component';
 import { TarjetaVideoComponent } from './componentes/tarjeta-video/tarjeta-video.component';
 import { TarjetaPequeComponent } from './componentes/tarjeta-peque/tarjeta-peque.component';
+import { EdicionScreenComponent } from './pantallas/edicion-screen/edicion-screen.component';
+import { NoticiaNuevaScreenComponent } from './pantallas/noticia-nueva-screen/noticia-nueva-screen.component';
+import { NacionalesScreenComponent } from './pantallas/nacionales-screen/nacionales-screen.component';
+import { DeportesScreenComponent } from './pantallas/deportes-screen/deportes-screen.component';
+import { CovidScreenComponent } from './pantallas/covid-screen/covid-screen.component';
+import { InternacionalesScreenComponent } from './pantallas/internacionales-screen/internacionales-screen.component';
+import { TecnologiaScreenComponent } from './pantallas/tecnologia-screen/tecnologia-screen.component';
+import { RegistroScreenComponent } from './pantallas/registro-screen/registro-screen.component';
+
 
 
 @NgModule({
@@ -28,10 +38,19 @@ import { TarjetaPequeComponent } from './componentes/tarjeta-peque/tarjeta-peque
     VideosScreenComponent,
     TarjetaVideoComponent,
     TarjetaPequeComponent,
+    EdicionScreenComponent,
+    NoticiaNuevaScreenComponent,
+    NacionalesScreenComponent,
+    DeportesScreenComponent,
+    CovidScreenComponent,
+    InternacionalesScreenComponent,
+    TecnologiaScreenComponent,
+    RegistroScreenComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

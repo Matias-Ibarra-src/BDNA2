@@ -3,11 +3,12 @@ import { Noticia } from 'src/app/modelo/noticia.model';
 import { NoticiaService } from 'src/app/servicios/noticia/noticia.service';
 
 @Component({
-  selector: 'app-noticias-semana-screnn',
-  templateUrl: './noticias-semana-screnn.component.html',
-  styleUrls: ['./noticias-semana-screnn.component.css']
+  selector: 'app-tecnologia-screen',
+  templateUrl: './tecnologia-screen.component.html',
+  styleUrls: ['./tecnologia-screen.component.css']
 })
-export class NoticiasSemanaScrennComponent implements OnInit {
+export class TecnologiaScreenComponent implements OnInit {
+
   public noticias: Noticia[];
 
   constructor(private noticiasService: NoticiaService) { }

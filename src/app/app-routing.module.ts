@@ -4,6 +4,12 @@ import { DetalleNoticiaScreenComponent } from './pantallas/detalle-noticia-scree
 import { InicioScreenComponent } from './pantallas/inicio-screen/inicio-screen.component';
 import { NoticiasSemanaScrennComponent } from './pantallas/noticias-semana-screnn/noticias-semana-screnn.component';
 import { VideosScreenComponent } from './pantallas/videos-screen/videos-screen.component';
+import { NacionalesScreenComponent } from './pantallas/nacionales-screen/nacionales-screen.component';
+import { InternacionalesScreenComponent } from './pantallas/internacionales-screen/internacionales-screen.component';
+import { DeportesScreenComponent } from './pantallas/deportes-screen/deportes-screen.component';
+import { TecnologiaScreenComponent } from './pantallas/tecnologia-screen/tecnologia-screen.component';
+import { CovidScreenComponent } from './pantallas/covid-screen/covid-screen.component';
+import { RegistroScreenComponent } from './pantallas/registro-screen/registro-screen.component';
 
 const routes: Routes = [
   {
@@ -20,6 +26,24 @@ const routes: Routes = [
   },
   {
     path: 'videos', component: VideosScreenComponent,
+  },
+  {
+    path: 'nacionales', component:  NacionalesScreenComponent,
+  },
+  {
+    path: 'internacionales', component: InternacionalesScreenComponent,
+  },
+  {
+    path: 'deportes', component: DeportesScreenComponent,
+  },
+  {
+    path: 'tecnologia', component: TecnologiaScreenComponent,
+  },
+  {
+    path: 'covid', component: CovidScreenComponent,
+  },
+  {
+    path: 'registro', component: RegistroScreenComponent,
   }
 ];
 

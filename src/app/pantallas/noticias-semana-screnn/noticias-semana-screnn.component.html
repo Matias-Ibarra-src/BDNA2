@@ -3,7 +3,10 @@
     <div class="row mt-5">
         <div class="col-xs-12 col-sm-6 col-md-8 col-lg-12">
             <div class="col-10 my-3 offset-1" *ngFor="let noticia of noticias">
-                <app-tarjeta-semanal [semanaTarjeta]="noticia"></app-tarjeta-semanal>
+                <ng-template ngIf="getmostrar(noticia,'semana')">
+                    <app-tarjeta-semanal [semanaTarjeta]="noticia"></app-tarjeta-semanal>
+                </ng-template>
+
             </div>
             <!--col-->
         </div>

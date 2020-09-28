@@ -11,16 +11,16 @@ import { NoticiaService } from '../../servicios/noticia/noticia.service';
 export class DetalleNoticiaScreenComponent implements OnInit {
 
   public noticia: Noticia;
+  public relacionadas: Noticia[];
 
   constructor(
     private activateRoute: ActivatedRoute,
     private detalleService: NoticiaService,
-  ) { }
+  ){ }
 
   ngOnInit(): void {
     const id = this.activateRoute.snapshot.params['id'];
     this.noticia = this.detalleService.getNoticiaById(id);
-
   }
 
 }

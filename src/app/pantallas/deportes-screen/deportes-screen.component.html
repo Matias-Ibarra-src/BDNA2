@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+            <div class="col-10 offset-1" *ngFor="let noticia of noticias">
+                <ng-template [ngIf]="noticia.categoria == 'deporte'">
+                    <div>
+                        <app-tarjeta-noticia [noticiaTarjeta]='noticia'></app-tarjeta-noticia>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

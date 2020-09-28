@@ -10,13 +10,13 @@ import { NoticiaService } from 'src/app/servicios/noticia/noticia.service';
 export class InicioScreenComponent implements OnInit {
 
   public noticias: Noticia[];
-  public noticiasPequenas: Noticia[];
+  public mostrar: boolean;
 
   constructor(private noticiasService: NoticiaService) { }
 
   ngOnInit(): void {
     this.noticias = this.noticiasService.getNoticias();
-    this.noticiasPequenas = this.noticiasService.getNoticiasPeque();
+
   }
 
 }
