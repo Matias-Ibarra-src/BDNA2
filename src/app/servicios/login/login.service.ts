@@ -30,11 +30,13 @@ export class LoginService {
   nuevoUsuario(): Usuario{
     return {
       id: this.usuarios.length,
+      nick: '',
       rol: '',
       Nombre: '',
       Apellido: '',
       Email: '',
       Password: '',
+      confirmacion: '',
     };
   }
 }

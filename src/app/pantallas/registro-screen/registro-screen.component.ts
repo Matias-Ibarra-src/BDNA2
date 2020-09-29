@@ -10,7 +10,9 @@ import { LoginService } from '../../servicios/login/login.service';
 export class RegistroScreenComponent implements OnInit {
 
   public usuario: Usuario;
-  constructor(private usuarioservicio: LoginService) {}
+
+  constructor(private usuarioservicio: LoginService) {
+  }
 
   ngOnInit(): void {
     this.usuario = this.usuarioservicio.nuevoUsuario();

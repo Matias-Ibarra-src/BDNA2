@@ -16,7 +16,6 @@ export class InicioScreenComponent implements OnInit {
 
   ngOnInit(): void {
     this.noticias = this.noticiasService.getNoticias();
-
   }
 
 }
