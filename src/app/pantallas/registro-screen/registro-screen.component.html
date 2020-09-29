@@ -1,26 +1,100 @@
-<div ng-app="" ng-init="">
-    <form>
-        <div class="form-group">
-            <label for="formGroupExampleInput">Nombres</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre" [(ngModel)]="usuario.Nombre">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput">Apellidos</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" [(ngModel)]="usuario.Apellido">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="usuario.Email">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputPassword4">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword4" [(ngModel)]="usuario.Password">
-            </div>
-        </div>
-    </form>
+<div class="containerfluid">
+    <div class="row">
+        <div class="col-6">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card" id="login">
+                    <div class="card-header">
+                        <h3>Inicio de Sesion</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" required>
 
-    <p>
-        <button (click)="this.nuevoUsuario()">Guardar</button>
-    </p>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <!--Contraseña-->
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">Recuerdame
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Iniciar Sesion">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+
+                        <div class="d-flex justify-content-center">
+                            <a href="#">Olvidaste tu Contraseña?</a>
+                        </div>
+                        <!--recuperar contraseña-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Ingresar-->
+        <div class="col-6">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card" id="registro">
+                    <div class="card-header">
+                        <h3>Registro de Usuario</h3>
+
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Nombre de Usuario">
+
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="ejemplo@ejemplo.com">
+
+                            </div>
+                            <!--Email-->
+
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <!--Contraseña-->
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Repita su Contraseña">
+                            </div>
+                            <!--Repetir Contraseña-->
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">Es Usted Periodista?
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Registrarse" class="btn float-right login_btn">
+                            </div>
+                            <!--Registrar-->
+                            <label>Nota: si es usted periodista un Administrador se contactará con usted para validad su identidad y otorgarle los permisos correpondientes</label>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Registro-->
+    </div>
 </div>

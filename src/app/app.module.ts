@@ -22,6 +22,10 @@ import { CovidScreenComponent } from './pantallas/covid-screen/covid-screen.comp
 import { InternacionalesScreenComponent } from './pantallas/internacionales-screen/internacionales-screen.component';
 import { TecnologiaScreenComponent } from './pantallas/tecnologia-screen/tecnologia-screen.component';
 import { RegistroScreenComponent } from './pantallas/registro-screen/registro-screen.component';
+import { ClockComponent } from './componentes/clock/clock.component';
+import { CalificacionComponent } from './componentes/calificacion/calificacion.component';
+import { WeatherComponent } from './componentes/weather/weather.component';
+import { ConversorComponent } from './componentes/conversor/conversor.component';
 
 
 
@@ -46,6 +50,10 @@ import { RegistroScreenComponent } from './pantallas/registro-screen/registro-sc
     InternacionalesScreenComponent,
     TecnologiaScreenComponent,
     RegistroScreenComponent,
+    ClockComponent,
+    CalificacionComponent,
+    WeatherComponent,
+    ConversorComponent,
   ],
   imports: [
     BrowserModule,

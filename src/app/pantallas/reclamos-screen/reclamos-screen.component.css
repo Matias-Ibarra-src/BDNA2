@@ -1,0 +1,14 @@
+button,
+input[type="button"],
+input[type="submit"] {
+    color: white;
+    background-color: rgb(187, 20, 20);
+    border-color: white;
+}
+
+.containerfluid {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}

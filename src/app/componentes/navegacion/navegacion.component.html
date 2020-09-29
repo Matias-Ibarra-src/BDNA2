@@ -1,6 +1,6 @@
 <div id="nav1" class="row-md-4">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00ffaaca;">
-        <a class="navbar-brand" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" href="#">
+        <a class="navbar-brand">
             <h4 class="h"><img class="imagen" width="30" heigth="30" src="https://yt3.ggpht.com/a/AATXAJxLlg0gJLzBLLb6l9f-c_yKAiKz3oh62awc6k-M=s100-c-k-c0xffffffff-no-rj-mo"></h4>
         </a>
 
@@ -36,49 +36,17 @@
                 </li>
             </ul>
             <!--barra de navegacion-->
-
-            <div>
-                <div class="btn-group dropleft">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                      Iniciar Sesion
-                    </font></font></button>
-                    <div class="dropdown-menu">
-                        <form class="px-4 py-3">
-                            <div class="form-group">
-                                <label for="exampleDropdownFormEmail1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de correo electrónico</font></font></label>
-                                <input type="email" class="form-control" id="FormEmail1" placeholder="email@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleDropdownFormPassword1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contraseña</font></font></label>
-                                <input type="password" class="form-control" id="FormPassword" placeholder="Contraseña">
-                            </div>
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                    <label class="form-check-label" for="dropdownCheck"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                                Recuérdame
-                              </font></font></label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Log In</font></font></button>
-                        </form>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" [routerLink]="['registro']" routerLinkActive="active">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">¿Nuevo por aquí? </font>
-                                <font style="vertical-align: inherit;">Regístrate</font>
-                            </font>
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">¿Se te olvidó tu contraseña?</font>
-                            </font>
-                        </a>
-                    </div>
-                </div>
+            <div class="mx-3">
+                <button class="switch" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
             </div>
-            <!--botn-->
+            <div class="identificarse" id="identificarse">
+                <a class="btn btn-primary btnCambioColor" [routerLink]="['registro']" routerLinkActive="active" role="button"><i class="fas fa-user mr-3"></i>Identificarse</a>
+            </div>
         </div>
         <!--fin de la barra-->
+
     </nav>
 </div>

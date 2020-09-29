@@ -1,0 +1,85 @@
+.containerfluid {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+#login {
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+#registro {
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.card-header h3 {
+    color: white;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border: 0 !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.remember {
+    color: white;
+}
+
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    color: white;
+    background-color: rgb(187, 20, 20);
+    border-color: white;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    color: white;
+    background-color: orange;
+    border-color: white;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus {
+    color: white;
+    background-color: orange;
+    border-color: white;
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
+}
+
+label {
+    color: white;
+}
