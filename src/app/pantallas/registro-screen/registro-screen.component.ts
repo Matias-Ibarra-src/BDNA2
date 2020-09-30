@@ -20,10 +20,12 @@ export class RegistroScreenComponent implements OnInit {
   // tslint:disable-next-line: typedef
   comprobarInicio(usuario: Usuario){
     if (!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(usuario.Email))){
+      console.log(usuario.Email);
       this.toastr.error('ingrese una dirreccion de correo valida', 'correo invalido');
       this.validacion = 0;
     }
     if (usuario.Password == null || usuario.Password.length === 0 || /^\s+$/.test(usuario.Password)){
+      console.log(usuario.Password);
       this.toastr.error('ingrese una contraseña con almenos 6 caracteres', 'contraseña invalida');
       this.validacion = 0;
     }
@@ -31,24 +33,34 @@ export class RegistroScreenComponent implements OnInit {
 
   // tslint:disable-next-line: typedef
   comprobarRegistro(usuario: Usuario){
+    if (usuario.nick == null || usuario.nick.length === 0 || /^\s+$/.test(usuario.nick)){
+      console.log(usuario.nick);
+      this.toastr.error('ingrese un nombre de usuario valido', 'usuario invalido');
+      this.validacion = 0;
+    }
     if (!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(usuario.Email))){
+      console.log(usuario.Email);
       this.toastr.error('ingrese una dirreccion de correo valida', 'correo invalido');
       this.validacion = 0;
     }
     if (usuario.Password == null || usuario.Password.length === 0 || /^\s+$/.test(usuario.Password)){
+      console.log(usuario.Password);
       this.toastr.error('ingrese una contraseña con almenos 6 caracteres', 'contraseña invalida');
       this.validacion = 0;
     }
     // tslint:disable-next-line: max-line-length
     if (usuario.Password == null || usuario.Password.length === 0 || /^\s+$/.test(usuario.Password) || (usuario.Password === usuario.confirmacion)){
+      console.log(usuario.confirmacion);
       this.toastr.error('las contraseñas no coinciden', 'contraseña invalida');
       this.validacion = 0;
     }
     if (usuario.Nombre == null || usuario.Nombre.length === 0 || /^\s+$/.test(usuario.Nombre)){
+      console.log(usuario.Nombre);
       this.toastr.error('ingrese un nombre', 'Nombre invalido');
       this.validacion = 0;
     }
     if (usuario.Apellido == null || usuario.Apellido.length === 0 || /^\s+$/.test(usuario.Apellido)){
+      console.log(usuario.Apellido);
       this.toastr.error('ingrese su apellido', 'Apellido invalido');
       this.validacion = 0;
     }
