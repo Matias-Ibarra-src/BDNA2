@@ -1,2 +1,4 @@
-<app-navegacion></app-navegacion>
-<router-outlet></router-outlet>
+<app-navegacion (modeEmitter)="handleMode($event)"></app-navegacion>
+<div class="container-fluid" [ngClass]="{'bg-dark': darkmode}" ngClass>
+    <router-outlet></router-outlet>
+</div>

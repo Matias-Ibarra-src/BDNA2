@@ -37,10 +37,8 @@
             </ul>
             <!--barra de navegacion-->
             <div class="mx-3">
-                <button class="switch" id="switch" onchange="cambiarFondo(this)">
-					<option value="honeydew"><i class="fas fa-sun"></i></option>
-					<option value="dark"><i class="fas fa-moon"></i></option>
-				</button>
+                <span class="mx-2" (click)="onPropagar()"><i class="fas fa-sun"></i></span>
+                <span class="mx-2" (click)="onPropagar()"><i class="fas fa-moon"></i></span>
             </div>
             <div class="identificarse" id="identificarse">
                 <a class="btn btn-primary btnCambioColor" [routerLink]="['registro']" routerLinkActive="active" role="button"><i class="fas fa-user mr-3"></i>Identificarse</a>

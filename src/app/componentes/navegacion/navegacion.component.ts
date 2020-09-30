@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-navegacion',
@@ -6,9 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navegacion.component.css']
 })
 export class NavegacionComponent implements OnInit {
+  @Output()
+  modeEmitter = new EventEmitter<boolean>();
+  public darkmode: boolean;
+  constructor() {
+    this.darkmode = false;
+  }
 
-  constructor() { }
-
+  // tslint:disable-next-line: typedef
+  onPropagar(){
+    this.darkmode = !this.darkmode;
+    this.modeEmitter.emit(this.darkmode);
+  }
   ngOnInit(): void {
+
   }
 }
