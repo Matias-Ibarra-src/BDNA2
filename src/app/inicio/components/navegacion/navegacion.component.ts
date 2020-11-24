@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { UsuarioProviderService } from '../../../core/providers/usuario/usuario-provider.service';
+import { Usuario } from '../../../core/models/usuario.model';
 
 @Component({
   selector: 'app-navegacion',
@@ -7,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavegacionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userProvider: UsuarioProviderService) {
+  }
 
   ngOnInit(): void {
     const btnSwitch = document.querySelector('#switch');

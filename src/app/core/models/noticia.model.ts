@@ -2,11 +2,13 @@ export interface Noticia{
   _id?: string;
   titulo: string;
   imgUrl: string;
+  VideoUrl?: string;
   resumen: string;
   cuerpo: string;
-  estado: string;
-  fecha: string;
+  fecha: Date;
   categoria: string;
-  mostrar?: string[];
-  relacion?: string[];
+  mostraren: string;
+  autor?: string;
+  estado?: string;
+  visitas?: number;
 }

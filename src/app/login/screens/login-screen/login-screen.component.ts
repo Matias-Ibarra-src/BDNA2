@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { UsuarioProviderService } from '../../../core/providers/usuario/usuario-provider.service';
+import { Observable } from 'rxjs';
+import { Usuario } from 'src/app/core/models/usuario.model';
+import { RouterLink, Router, Routes, RouterOutlet } from '@angular/router';
+import { FormControl, FormGroup } from '@angular/forms';
+import { AdminComponent } from '../../../admin/admin.component';
+import { UsuarioComponent } from '../../../usuario/usuario.component';
+import { PeriodistaComponent } from '../../../periodista/periodista.component';
 
 @Component({
   selector: 'app-login-screen',
@@ -7,9 +15,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginScreenComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild(UsuarioComponent) traspasoUser: UsuarioComponent;
+
+  public usuarios$: Observable<Usuario[]>;
+  public LoginFormGroup: FormGroup;
+
+  constructor(private userProvider: UsuarioProviderService, private router: Router) {
+    this.LoginFormGroup = new FormGroup({
+      Email: new FormControl(''),
+      Password: new FormControl(''),
+    });
+    this.usuarios$ = this.GetAllusers();
+  }
 
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line: typedef
+  GetAllusers(): Observable<Usuario[]>{
+    return this.userProvider.GetAllUsuarios();
+  }
+
+  // tslint:disable-next-line: typedef
+  public ComprobarUsuario(users: Usuario[]){
+    for (const usuario of users){
+      if (usuario.Email === this.LoginFormGroup.get('Email').value){
+        if (usuario.Password === this.LoginFormGroup.get('Password').value){
+          if (usuario.rol === 'Usuario'){
+            // this.traspasoUser.traspaso(usuario._id);
+            this.router.navigate(['inicio/login/Usuario']);
+          }
+        }
+      }
+    }
+  }
 }

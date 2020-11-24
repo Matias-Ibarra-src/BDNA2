@@ -21,6 +21,8 @@ import { SmallCardComponent } from './components/small-card/small-card.component
 import { WeatherComponent } from './components/weather/weather.component';
 import { NavegacionComponent } from './components/navegacion/navegacion.component';
 import { NoticiasProviderService } from '../core/providers/noticias/noticias-provider.service';
+import { ReclamosScreenComponent } from './screens/reclamos-screen/reclamos-screen.component';
+import { ListaComentariosComponent } from './components/lista-comentarios/lista-comentarios.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { NoticiasProviderService } from '../core/providers/noticias/noticias-pro
     SemanalCardComponent,
     SmallCardComponent,
     WeatherComponent,
-    NavegacionComponent],
+    NavegacionComponent,
+    ReclamosScreenComponent,
+    ListaComentariosComponent],
   imports: [
     CommonModule,
     InicioRoutingModule

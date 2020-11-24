@@ -17,7 +17,6 @@ export class NoticiasProviderService {
 
   // tslint:disable-next-line: typedef
   public getNoticiabyId(id: string){
-    console.log(id);
     return this.httpservice.get<Noticia>('/noticia/' + id);
   }
 

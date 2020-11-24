@@ -4,16 +4,18 @@ import { CommonModule } from '@angular/common';
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
 import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
-import { AdminScreenComponent } from './screens/admin-screen/admin-screen.component';
-import { CreateAndLoadScreenComponent } from './screens/create-and-load-screen/create-and-load-screen.component';
-import { NavegacionComponent } from './components/navegacion/navegacion.component';
+import { RegisterScreenComponent } from './screens/register-screen/register-screen.component';
+import { OlvideContraScreenComponent } from './screens/olvide-contra-screen/olvide-contra-screen.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [LoginComponent, LoginScreenComponent, AdminScreenComponent, CreateAndLoadScreenComponent, NavegacionComponent],
+  // tslint:disable-next-line: max-line-length
+  declarations: [LoginComponent, LoginScreenComponent, RegisterScreenComponent, OlvideContraScreenComponent],
   imports: [
     CommonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class LoginModule { }
